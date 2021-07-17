@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="This is a Kubernetes Webapp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="coding , html, css, kubernetes, docker, redhat">
+    <meta name="author" content="Dileep Kumar SR">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>My Page</title>
+</head>
+<body>
+    <h1 id="kube-title">Kubernetes Web App</h1>
+
+    <div class="a1">
+    <div class="kube-pod">
+        <h2>Create || Delete pod</h2>
+        <h4>Pod name: </h4> <input type="text" id="pod-in1">
+        <h4>Image name: </h4> <input type="text" id="img-in1">
+        <div class="pod-create-delete">
+            <button class="create" onclick="lw()">Create Pod</button>
+            <button class="delete">Delete Pod</button>
+        </div>
+        
+    </div>
+
+    <div class="run-cmd">
+    <p> WHAT IS YOUR REQUIREMENT </p>
+    <input type="text" id="cmd-inp">
+    <button onclick="lw()">click to run</button>
+    </div>
+
+    <div class="kube-deploy">
+        <h2>Create || Delete Deployment</h2>
+        <h4>Deployment name: </h4> <input type="text" id="deploy-in1">
+        <h4>Image name: </h4> <input type="text" id="img-in2">
+        <div class="deploy-create-delete">
+            <button class="create">Create Deploy</button>
+            <button class="delete">Delete Deploy</button>
+        </div>
+        
+    </div>
+</div>
+
+<div class="a2">
+    <div class="expose-deploy">
+        <h2>Expose Deployment</h2>
+        <h4>Deployment name: </h4> <input type="text" id="deploy-name-in1">
+        <div class="expose-deploy-button">
+            <button class="expose">Expose</button>
+        </div>
+        
+    </div>
+
+    <div class="output-div">
+        <h3 id="output">Output</h3>
+        <br>
+        <br>
+        <p id="out-id">Here is the output...</p>
+    </div>
+
+    <div class="scale-replica">
+        <h2>Scale Deployment</h2>
+        <h4>Deployment name: </h4> <input type="text" id="deploy-in1">
+        <h4>Number of replicas: </h4> <input type="text" id="no-replica-in1">
+        <div class="create-replica">
+            <button class="scale">Scale</button>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+<!-- <div>
+    <p id="dp1">Hello</p>
+</div>
+<p onclick="lw()">Hello everyone...</p>
+
+<input type="text" id="inp1" onkeyup="lw1()" />
+<div id="d1" onclick="lwa()">my content</div>
+
+
+<script>
+    function lw() {
+        data = document.getElementById('dp1')
+        alert(data.innerHTML)
+        data.innerHTML = "Hello bye.."
+    }
+
+    function lw1() {
+        var i = document.getElementById('inp1');
+        var j = document.getElementById('d1')
+        j.innerHTML = i.value;
+    }
+
+    function lwa() {
+        var j = document.getElementById('d1');
+        document.location = j.innerHTML;
+    }
+</script> -->
